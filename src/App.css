@@ -4,19 +4,123 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  color: rgb(14, 68, 34);
 }
 
 .App-header {
   background-color: rgb(14, 68, 34);
   height: 15vh;
-  width: 100%;
+  width: 100vw;
   font-size: calc(10px + 2vmin);
   color: white;
-  padding: 2%
+  padding-top: 1em;
+  padding-bottom: 0.5em;
 }
 
+.social-container {
+  margin: 0.5em
+}
+
+.socialIcons {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin: 0.5em
+}
+.social-icon{
+  padding: 0.5em
+}
 
 .main-container {
-  background-color: rgb(162, 205, 178);
-  height:85vh
+  background-color: rgb(210, 231, 217);
+  display:flex;
+  width: 100vw;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
+
+.about-me{
+  width: 80%;
+  text-align: center;
+  margin: 0em;
+  padding: 0em
+}
+
+a {
+  color: rgb(26, 94, 52);
+  text-decoration: none;
+}
+
+a:visited {
+  color: rgb(26, 94, 52);
+  text-decoration: none;
+}
+
+a:hover {
+  color: rgb(255, 252, 252);
+  text-decoration: none;
+}
+
+.projects-container {
+  width: 80%;
+  margin: auto;
+}
+
+
+.projects-slider {
+  display: flex;
+  border-radius: 6px;
+  color: rgb(14, 68, 34);
+  background: #eee;
+  padding: 1rem;
+  box-shadow: 0 0 1rem rgb(14, 68, 34) inset;
+  overflow-x: auto;
+  position: relative;
+}
+  
+.projects-slider::-webkit-scrollbar {
+    display: none;
+  }
+
+
+.project-card {
+    flex: 1 0 250px;
+    box-shadow: 0 1px 1rem -4px rgb(14, 68, 34);
+    background: #fff;
+    margin: 1rem;
+    overflow: hidden;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 250ms ease-in-out;
+}
+    
+.project-card > img {
+      width: 250px;
+      height: 250px;
+      object-fit: center;
+    }
+    
+.project-card:hover {
+      box-shadow: 0 4px 1rem -4px rgb(14, 68, 34);
+      transform: translateY(-10px);
+    }
+  
+  .card-content {
+    padding: 1rem;
+  }
+  
+  @media screen and (max-width: 625px) {
+    .projects-container {
+      width: 100%
+    }
+    
+    .projects-slider {
+      padding: .5rem;
+    }
+    
+    .project-card {
+      margin: .5rem;
+    }
+  }
