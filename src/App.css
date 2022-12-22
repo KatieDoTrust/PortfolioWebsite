@@ -55,6 +55,15 @@
   padding: 0em
 }
 
+.language-icons-container {
+  display:flex;
+  flex-direction: row;
+}
+
+.language-icon {
+  padding: 1em
+}
+
 a {
   color: rgb(26, 94, 52);
   text-decoration: none;
