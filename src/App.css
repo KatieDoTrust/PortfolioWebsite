@@ -106,7 +106,7 @@ img {
 
 
 .project-card {
-    flex: 1 0 250px;
+    flex: 1 0 450px;
     box-shadow: 0 1px 1rem -4px rgb(14, 68, 34);
     background: #fff;
     margin: 1rem;
@@ -117,8 +117,8 @@ img {
 }
     
 .project-card > img {
-      width: 250px;
-      height: 250px;
+      width: 450px;
+      height: 300px;
       object-fit: center;
     }
     
@@ -126,6 +126,10 @@ img {
       box-shadow: 0 4px 1rem -4px rgb(14, 68, 34);
       transform: translateY(-10px);
     }
+
+.project-links:hover {
+  color: rgb(14, 68, 34);
+}
   
   .card-content {
     padding: 1rem;

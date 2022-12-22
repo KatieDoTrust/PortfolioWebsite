@@ -1,5 +1,7 @@
-function ProjectCard({title, content, imgUrl}) {
+function ProjectCard({title, content, imgUrl, projectUrl}) {
     return (
+      <>
+      <a href={projectUrl} className="project-links">
           <div className="project-card">
             <img src={imgUrl } 
               alt={'Image' } />
@@ -8,6 +10,8 @@ function ProjectCard({title, content, imgUrl}) {
               <p>{ content }</p>
             </div>
           </div>
+          </a>
+       </>
     )
   }
   
