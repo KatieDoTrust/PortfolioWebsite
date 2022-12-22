@@ -1,8 +1,12 @@
 
 
-function SocialIcon({name}) {
+function SocialIcon({icon, url}) {
   return (
-    <div className="social-icon">{name}</div>
+    <>
+    <a href={url} className="social-icon">
+    <div className="social-icon">{icon}</div>
+    </a>
+    </>
   )
 }
 

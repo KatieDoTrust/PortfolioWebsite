@@ -3,6 +3,7 @@ import SocialIcons from './SocialIcons/SocialList';
 import ProjectsContainer from './ProjectsSlider/ProjectsContainer';
 import EmailForm from './EmailForm';
 
+
 function App() {
   return (
     <>
@@ -14,6 +15,7 @@ function App() {
       </header>
     </div>
     <div className="main-container">
+      <img src="/headshot.jpg" height="20%" width="20%" alt="https://unsplash.it/200/200"></img>
       <div className="about-me">
       <p>Software Developer currently working as a Full Stack Engineer at </p><a href="https://www.dotrust.co.uk/">Department of Trust.</a>
       <p>Actuary and Hong Kong resident in a previous life.</p>

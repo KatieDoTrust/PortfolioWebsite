@@ -1,20 +1,24 @@
 import SocialIcon from "./SocialIcon"
+import { FaLinkedin, FaGithub } from 'react-icons/fa'
+import { MdMailOutline } from 'react-icons/md'
 
 function SocialList() {
 
     const socialList = [    
-        {name: "GitHub", icon:"",url:""},
-        {name: "LinkedIn", icon:"", url:""},
-        {name: "Email", icon:"", url:""}
+        {name: "GitHub", icon: <FaGithub/>, url:"https://github.com/katiebooth"},
+        {name: "LinkedIn", icon : <FaLinkedin/>, url:"https://www.linkedin.com/in/katie-booth-598995159/"},
+        {name: "Email", icon: <MdMailOutline/>, url:"https://www.google.co.uk/"}
     ]
     
-    const names = socialList.map(social=> {
+    const icons = socialList.map(social=> {
       return <SocialIcon 
-        name={social.name}
+        icon={social.icon}
+        url={social.url}
       />})
 
+    console.log(icons)
   return (
-    <div className="socialIcons">{names}</div>
+    <div className="socialIcons">{icons}</div>
   )
 }
 
