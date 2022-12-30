@@ -11,7 +11,7 @@ function App() {
     <div className="App">
       <header className="App-header">
         Katie Booth - Full Stack Engineer
-        <div className="social-container">
+        <div className="social-container" >
         <SocialIcons/></div>
       </header>
     </div>
