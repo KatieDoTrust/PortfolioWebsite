@@ -15,8 +15,7 @@ function SocialList() {
         icon={social.icon}
         url={social.url}
       />})
-
-    console.log(icons)
+      
   return (
     <div className="socialIcons">{icons}</div>
   )
