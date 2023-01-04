@@ -5,12 +5,12 @@ import LanguageIcon from './LanguageIcon'
 function LanguageContainer() {
     
     const languages = [
-        {name: "React", img: <FaReact/>},
-        {name: "Javascript", img: <SiJavascript/>},
-        {name: "Python", img: <FaPython/>},
-        {name: "Java", img: <FaJava/>},
-        {name: "PostgreSQL", img: <SiPostgresql/>},
-        {name: "MongoDB", img: <SiMongodb/>}
+        {name: "React", img: <FaReact size={30}/>},
+        {name: "Javascript", img: <SiJavascript size={30}/>},
+        {name: "Python", img: <FaPython size={30}/>},
+        {name: "Java", img: <FaJava size={30}/>},
+        {name: "PostgreSQL", img: <SiPostgresql size={30}/>},
+        {name: "MongoDB", img: <SiMongodb size={30}/>}
     ]
 
     const iconsList = languages.map((language)=>{
