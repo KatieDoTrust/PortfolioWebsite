@@ -11,13 +11,15 @@ function EmailForm() {
     emailjs.sendForm("service_zoj329x", "contact_form", form.current, "y0DfgYROnru8eEtuD")
     .then(
       () => {
-        toast('Message successfully sent!')
+        toast.success('Message successfully sent!',{
+          position: toast.POSITION.BOTTOM_RIGHT
+        })
         window.setTimeout(() => {
           window.location.reload()
         }, 3000)
       },
       () => {
-        toast('Failed to send the message, please try again')
+        toast.error('Failed to send the message, please try again')
       }
     )
   }
