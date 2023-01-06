@@ -13,9 +13,10 @@ function LanguageContainer() {
         {name: "MongoDB", img: <SiMongodb size={30}/>}
     ]
 
-    const iconsList = languages.map((language)=>{
+    const iconsList = languages.map((language, index)=>{
         return <LanguageIcon
             icon = {language.img} 
+            key={index}
         />
     })
   return (<div className="language-icons-container">{iconsList}</div>

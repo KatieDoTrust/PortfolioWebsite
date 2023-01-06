@@ -8,11 +8,12 @@ function ProjectsContainer() {
       {id: 4, title: 'Cake Recipes', content: 'Tasty first mini React project to practice APIs.', imgUrl: '/cake_recipes_screenshot.jpeg',projectUrl: "https://github.com/katiebooth/Cake_Recipe_App_React_API" }
     ]
   
-    const projects = projectData.map((project) => {
+    const projects = projectData.map((project, index) => {
       return <ProjectCard title={ project.title }
       content={ project.content }
       imgUrl={ project.imgUrl }
-      projectUrl={project.projectUrl} />
+      projectUrl={project.projectUrl}
+      key={index} />
     })
 
   

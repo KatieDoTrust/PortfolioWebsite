@@ -7,13 +7,14 @@ function SocialList() {
     const socialList = [    
         {name: "GitHub", icon: <FaGithub size={35}/>, url:"https://github.com/katiebooth"},
         {name: "LinkedIn", icon : <FaLinkedin size={35}/>, url:"https://www.linkedin.com/in/katie-booth-598995159/"},
-        {name: "Email", icon: <MdMailOutline size={35} />, url:"https://www.google.co.uk/"}
+        // {name: "Email", icon: <MdMailOutline size={35} />, url:"https://www.google.co.uk/"}
     ]
     
-    const icons = socialList.map(social=> {
+    const icons = socialList.map((social, index) => {
       return <SocialIcon 
         icon={social.icon}
         url={social.url}
+        key={index}
       />})
 
   return (

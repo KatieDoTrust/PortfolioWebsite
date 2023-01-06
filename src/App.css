@@ -14,12 +14,7 @@
   font-size: calc(10px + 2vmin);
   color: white;
   padding-top: 1em;
-  padding-bottom: 0.5em;
-}
-
-.social-container {
-  margin: 0.5em;
-  scroll-behavior: smooth;
+  padding-bottom: 1em;
 }
 
 .socialIcons {
@@ -27,12 +22,9 @@
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  margin: 0.5em
 }
 .social-icon{
   padding: 0.5em;
-  height: 5%;
-  width: 5%;
   color: white
 }
 
